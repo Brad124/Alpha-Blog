@@ -1,0 +1,26 @@
+<center><h1> Create A Fucking Article</h1>
+
+<%= form_for @article do |f| %>
+
+<p>
+    <%= f.label :title %>
+    </br>
+    
+    <%= f.text_field :title %>
+</p>
+
+<p>
+    <%= f.label :description %>
+    </br>
+    
+    <%= f.text_area :description %>
+    
+</p>
+
+<p>
+    <%= f.submit :"Create A Fucking Article" %>
+</p>
+
+<% end %>
+
+</center>

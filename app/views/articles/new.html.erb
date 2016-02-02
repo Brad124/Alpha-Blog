@@ -1,4 +1,21 @@
-<center><h1> Create A Fucking Article</h1>
+<h1> Create A Fucking Article</h1>
+
+
+<% if @article.errors.any? %>
+
+<h2>These errors are the reason your article wasn't fucking created</h2>
+
+ <ul>
+
+    <% @article.errors.full_messages.each do |msg| %>
+
+    <li><%= msg %></li>
+
+    <% end %>
+
+  </ul>
+
+<% end %>
 
 <%= form_for @article do |f| %>
 
@@ -23,4 +40,3 @@
 
 <% end %>
 
-</center>

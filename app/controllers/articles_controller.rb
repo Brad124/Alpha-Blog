@@ -29,7 +29,7 @@ class ArticlesController < ApplicationController
         
         if @article.save
             
-            flash[:notice] = "Article was created"
+            flash[:success] = "Article was created"
             
             redirect_to article_path(@article)
             
@@ -45,7 +45,7 @@ class ArticlesController < ApplicationController
         
         
         if @article.update(article_params)
-            flash[:notice] = "Article was fucking updated"
+            flash[:success] = "Article was fucking updated"
             redirect_to article_path(@article)
             
         else
@@ -63,7 +63,7 @@ class ArticlesController < ApplicationController
     def destroy
        
        @article.destroy
-       flash[:notice] = "Article was fucking deleted"
+       flash[:danger] = "Article was fucking deleted"
        
        redirect_to articles_path
     

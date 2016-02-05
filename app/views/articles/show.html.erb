@@ -1,10 +1,19 @@
-<h1>Showing selected article</h1>
+<h2 align="center">Title: <%= @article.title %></h2>
+<div class="well col-xs-8 col-xs-offset-2">
+  <h4 class="center description"><strong>Description:</strong></h4>
+  <hr> 
+ 
+  <%= simple_format(@article.description) %>
+  <div class="article-actions">
+      
+  
+<%= link_to "Edit this fucking article", edit_article_path(@article), class: "btn btn-xs btn-primary" %> 
 
-<p>Title: <%= @article.title %></p>
+<%= link_to "Delete this fucking article", article_path(@article), method: :delete, 
+                                          data: { confirm: "Are you fucking sure about deleting this shitty article?"},
+                                          class: "btn btn-xs btn-danger" %>
 
-<p>Description: <%= @article.description %></p>
+<%= link_to "View all fucking articles", articles_path, class: "btn btn-xs btn btn-success" %>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-
-<%= link_to "Back to fucking articles", articles_path %>
-
+</div>
+</div>

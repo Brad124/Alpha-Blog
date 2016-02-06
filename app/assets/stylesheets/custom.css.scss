@@ -29,7 +29,6 @@ $navbar-default-bg: #cc0000;
     background-image: asset-url('Attrc.jpg');
     background-size: cover; 
     height: 550px;
-    
 }
 
 .jumbotron h1 {
@@ -43,7 +42,11 @@ $navbar-default-bg: #cc0000;
 .btn-xlarge {
     font-size: 1.7em;
     background-color: black;
-    
+}
+
+.article-meta-details {
+    border-top: 1px solid #eaeaea;
+    margin-top: 15px; 
 }
 
 .article-actions {
@@ -77,7 +80,6 @@ footer {
 
 footer small {
     float: left;
-    
 }
 
 footer ul {

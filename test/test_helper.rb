@@ -1,6 +1,6 @@
-ENV['RAILS_ENV'] ||= 'test'
+ENV['RAILS_ENV'] ||= 'test_helper'
 require File.expand_path('../../config/environment', __FILE__)
-require 'rails/test_help'
+require 'rails/test_helper'
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
